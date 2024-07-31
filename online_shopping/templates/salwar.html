@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppinGzone</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <style>
+        .hero {
+            background-image: url("https://zola.in/cdn/shop/articles/suit.jpg?v=1687507081");
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+            color: white;
+            font-weight: 900;
+            padding: 100px 0;
+            text-align: center;
+            animation: BGChanger 5s infinite;
+        }
+        @keyframes BGChanger {
+  0%   {top: 0px; left: 0px; background-image: url("https://zola.in/cdn/shop/articles/suit.jpg?v=1687507081");}
+  25%  {top: 0px; left: 100px; background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_TgEtNJweDm-0X6fCNZWucGtM3MODRPHWOQ&s");}
+  50%  {top: 100px; left: 100px; background-image: url("https://ebazarninja.wordpress.com/wp-content/uploads/2016/10/salwar-suit-banner.jpg?w=600&h=225");}
+  75%  {top: 100px; left: 0px; background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoTCGqJBWa0phG1yjYdvL2dTJ_VANKX8tx0w&s");}
+  100% {top: 0px; left: 0px; background-image: url("https://zola.in/cdn/shop/articles/suit.jpg?v=1687507081");}
+}
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo" style="display: block; text-align: center;">
+            <h4>ShoppinGzone</h4>
+        </a>
+        <nav>
+            <div class="contain">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="shirts">T-shirt</a></li>
+                    <li><a href="kurti">Kurti</a></li>
+                    <li><a href="salwar">Salwar</a></li>
+                    <li><a href="jeans">Jeans</a></li>
+                    <li><a href="shoes">Shoes</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="featured-products">
+            <div class="container">
+                <h2>Salwar Collections</h2>
+                <div class="product-grid">
+                    <div class="product">
+
+                        <img src="https://urbanjaipur.com/wp-content/uploads/2023/05/straight-cut-salwar-suit.jpg"
+                            alt="">
+                        <h3>Straight-Cut-Salwar</h3>
+                        <p class="price">₹ 999.99</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://urbanjaipur.com/wp-content/uploads/2023/05/anarkali.jpg"
+                            alt="">
+                        <h3>Anarkali Suit</h3>
+                        <p class="price">₹ 1499.99</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://urbanjaipur.com/wp-content/uploads/2023/05/Punjabi-salwar-suit-4-.jpg"
+                            alt="">
+                        <h3>Punjabi Salwar</h3>
+                        <p class="price">₹ 879.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://urbanjaipur.com/wp-content/uploads/2023/05/plazzo-salwar-suit.jpg" alt="">
+                        <h3>Plazzo Salwar</h3>
+                        <p class="price">₹ 850.00</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured-products">
+            <div class="container">
+                <h2>Latest Products</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://urbanjaipur.com/wp-content/uploads/2023/05/frock-style.jpg"
+                            alt="">
+                        <h3>Frock-Style Salwar</h3>
+                        <p class="price">₹ 1000.00</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://urbanjaipur.com/wp-content/uploads/2023/05/Angarkha-Salwar-Suit.jpg" alt="">
+                        <h3>Angarkha Salwar Suit</h3>
+                        <p class="price">₹ 1499.00</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+
+                        <img src="https://urbanjaipur.com/wp-content/uploads/2023/05/jacket-style.jpg"
+                            alt="">
+                        <h3>Jacket Style Salwar</h3>
+                        <p class="price">₹ 2500.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+
+                        <img src="https://urbanjaipur.com/wp-content/uploads/2023/05/front-slit.jpg"
+                            alt="">
+                        <h3>Front Flit Salwar</h3>
+                        <p class="price">₹ 1129.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                </div>
+
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://urbanjaipur.com/wp-content/uploads/2023/05/pant-styles.jpg"
+                            alt="">
+                        <h3>Pant Style Salwar</h3>
+                        <p class="price">₹ 999.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://urbanjaipur.com/wp-content/uploads/2023/05/high-low-style-anadkarli.jpg" alt="">
+                        <h3>High Low Style Salwar</h3>
+                        <p class="price">₹ 1499.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+
+                        <img src="https://urbanjaipur.com/wp-content/uploads/2023/05/lehanga-style.jpg"
+                            alt="">
+                        <h3>Lehenga StyleSalwar</h3>
+                        <p class="price">₹ 879.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+
+                        <img src="https://urbanjaipur.com/wp-content/uploads/2023/05/asymmetric.jpg"
+                            alt="">
+                        <h3>Asymmetric Salwar</h3>
+                        <p class="price">₹ 1129.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured-products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="product-grid">
+                    <div class="product">
+
+                        <img src="https://urbanjaipur.com/wp-content/uploads/2023/05/long-anarkali.jpg"
+                    
+                            alt="">
+                        <h3>Floor Lenght Salwar</h3>
+                        <p class="price">₹ 999.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://urbanjaipur.com/wp-content/uploads/2023/05/capestyle.jpg"
+                            alt="">
+                        <h3>Cape Style Salwar</h3>
+                        <p class="price">₹ 1499.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://urbanjaipur.com/wp-content/uploads/2023/05/sahara-style.jpg"
+                            alt="">
+                        <h3>Sharara Style Salwar</h3>
+                        <p class="price">₹ 879.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://urbanjaipur.com/wp-content/uploads/2023/05/double-layered-anarkali-suit.jpg" alt="">
+                        <h3>Double-Layered Salwar</h3>
+                        <p class="price">₹ 1129.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            
+        </div>
+    </footer>
+
+    
+</body>
+
+</html>

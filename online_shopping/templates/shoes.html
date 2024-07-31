@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppinGzone</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <style>
+        .hero {
+            background-image: url("https://i.pinimg.com/564x/54/bb/b5/54bbb5dc42afe72d2665fd6d1f34629e.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+            color: rgb(241, 241, 241);
+            font-weight: 900;
+            padding: 100px 0;
+            text-align: center;
+            animation: BGChanger 5s infinite;
+        }
+
+        @keyframes BGChanger {
+            0% {
+                top: 0px;
+                left: 0px;
+                background-image: url("https://i.pinimg.com/564x/54/bb/b5/54bbb5dc42afe72d2665fd6d1f34629e.jpg");
+            }
+
+            25% {
+                top: 0px;
+                left: 100px;
+                background-image: url("https://img.freepik.com/free-photo/glamorous-stiletto-pair-vibrant-pink-color-generated-by-ai_188544-21011.jpg");
+            }
+
+            50% {
+                top: 100px;
+                left: 100px;
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHO_4FylVLq4ngucFeG_pK8TorBnVb1CwWZg&s");
+            }
+
+            75% {
+                top: 100px;
+                left: 0px;
+                background-image: url("https://www.shutterstock.com/image-photo/assortment-womens-shoes-summer-fashion-600nw-2470386755.jpg");
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+                background-image: url("https://i.pinimg.com/564x/54/bb/b5/54bbb5dc42afe72d2665fd6d1f34629e.jpg");
+            }
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo" style="display: block; text-align: center;">
+            <h4>ShoppinGzone</h4>
+        </a>
+        <nav>
+            <div class="contain">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="shirts">T-shirt</a></li>
+                    <li><a href="kurti">Kurti</a></li>
+                    <li><a href="salwar">Salwar</a></li>
+                    <li><a href="jeans">Jeans</a></li>
+                    <li><a href="shoes">Shoes</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="featured-products">
+            <div class="container">
+                <h2>Shoes Collections</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://sewguide.com/wp-content/uploads/2021/07/types-of-shoes-45.jpg" alt="">
+                        <h3>Canvas Shoes</h3>
+                        <p class="price">₹ 1000.00</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://assets.ajio.com/medias/sys_master/root/20231020/vKQQ/65318916afa4cf41f55234b2/-473Wx593H-466728178-pink-MODEL.jpg"
+                            alt="">
+                        <h3> Casual Shoes</h3>
+                        <p class="price">₹ 650.00</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://www.campusshoes.com/cdn/shop/products/RAISE_22L-129_ANGLFALS-MUNLT_e8271b68-025c-467d-868b-a2d001cbe4d8.jpg?v=1705475821"
+                            alt="">
+                        <h3>Raise Anglfals Shoes</h3>
+                        <p class="price">₹ 1299.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://www.redtape.com/cdn/shop/files/RLO1725_1_jpg.jpg?v=1716544648" alt="">
+                        <h3>Sports Shoes</h3>
+                        <p class="price">₹ 1500.00</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured-products">
+            <div class="container">
+                <h2>Latest Products</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://admin.mochishoes.com/product/41-195/660/41-195M49.jpg"
+                            alt="">
+                        <h3> Olive Casual Slip</h3>
+                        <p class="price">₹ 999.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://admin.mochishoes.com/product/41-179/660/41-179LA11.jpg" alt="">
+                        <h3>Black Ethnic Slip</h3>
+                        <p class="price">₹ 1499.99</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+
+                        <img src="https://www.oceedee.com/cdn/shop/files/ALICE12_900x.jpg?v=1715926174"
+                            alt="">
+                        <h3>Alice Heels</h3>
+                        <p class="price">₹ 879.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+
+                        <img src="https://www.oceedee.com/cdn/shop/files/Blog_leathe_care-19_540x.png?v=1689332443"
+                            alt="">
+                        <h3>Leather shoe</h3>
+                        <p class="price">₹ 1129.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>                       
+                         <button class="btn">Buy</button>
+                    </div>
+                </div>
+
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://cdn.shopify.com/s/files/1/0471/9584/8869/products/FST_FJDWC-7020_GREY-1_191x.jpg?v=1716297305"
+                            alt="">
+                        <h3>Laser Cut slip</h3>
+                        <p class="price">₹ 600.00</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://5.imimg.com/data5/ANDROID/Default/2023/11/357712714/TL/VV/FQ/102548438/product-500x500.jpg"
+                            alt="">
+                        <h3>Cut Shoe</h3>
+                        <p class="price">₹ 1499.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://m.media-amazon.com/images/I/610uRp18hcL._AC_UY300_.jpg"
+                            alt="">
+                        <h3>Half Cut Shoe</h3>
+                        <p class="price">₹ 450.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://image.s5a.com/is/image/saks/020822_SEO_SH_CLASSIC_TYPES_OF_SHOES_EDIT_SLOT4?scl=1&qlt=85&fmt=jpg"
+                            alt="">
+                        <h3>Tall Boots</h3>
+                        <p class="price">₹ 1129.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured-products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/x/j/p/-original-imaghsf4unx2fhkm.jpeg?q=90&crop=false"
+                            alt="">
+                        <h3> Casual Shoes</h3>
+                        <p class="price">₹ 999.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://image.s5a.com/is/image/saks/020822_SEO_SH_CLASSIC_TYPES_OF_SHOES_EDIT_SLOT6?scl=1&qlt=85&fmt=jpg"
+                            alt="">
+                        <h3>Lace-up shoes</h3>
+                        <p class="price">₹ 1499.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://cdn.saksfifthavenue.com/is/image/saks/0400086945884_BLACK?wid=255&hei=340&qlt=90&resMode=sharp2&op_usm=1.2,1,6,0"
+                            alt="">
+                        <h3>High-Top Shoes</h3>
+                        <p class="price">₹ 879.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/1ad5d2963a064b53a4cce33b2847c23b_9366/adidas-ax2s-hiking-shoes.jpg" alt="">
+                        <h3>Trekking Shoes</h3>
+                        <p class="price">₹ 1129.99</p>
+                        <button class="btn  btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

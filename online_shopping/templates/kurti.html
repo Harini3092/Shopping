@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppinGzone</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <style>
+        .hero {
+            background-image: url("https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/b/AmazonStores/A21TJRUUN4KGV/e3cff104cf541a343059ec2524f4f1e2.w1170.h400.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-weight: 900;
+            padding: 100px 0;
+            text-align: center;
+            animation: BGChanger 5s infinite;
+        }
+
+        @keyframes BGChanger {
+            0% {
+                top: 0px;
+                left: 0px;
+                background-image: url("https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/b/AmazonStores/A21TJRUUN4KGV/e3cff104cf541a343059ec2524f4f1e2.w1170.h400.jpg");
+            }
+
+            25% {
+                top: 0px;
+                left: 100px;
+                background-image: url("https://www.jaipurkurti.com/cdn/shop/collections/Kurtas-_-Kurtis-Banner.jpg?v=1708151633&width=2048");
+            }
+
+            50% {
+                top: 100px;
+                left: 100px;
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXnaXQE5ZatYjXUd3H45ul-FXtlbj8jABe2w&s");
+            }
+
+            75% {
+                top: 100px;
+                left: 0px;
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_4QNHjfXAds-0bfWDiEoW601Clz39EUvL1Q&s");
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+                background-image: url("https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/b/AmazonStores/A21TJRUUN4KGV/e3cff104cf541a343059ec2524f4f1e2.w1170.h400.jpg");
+            }
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo" style="display: block; text-align: center;">
+            <h4>ShoppinGzone</h4>
+        </a>
+        <nav>
+            <div class="contain">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="shirts">T-shirt</a></li>
+                    <li><a href="kurti">Kurti</a></li>
+                    <li><a href="salwar">Salwar</a></li>
+                    <li><a href="jeans">Jeans</a></li>
+                    <li><a href="shoes">Shoes</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="featured-products">
+            <div class="container">
+                <h2>Kurti Collections</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://www.suratifabric.com/blog/wp-content/uploads/2022/02/designer-kurtis.jpg"
+                            alt="">
+                        <h3>Designs Kurti</h3>
+                        <p class="price">₹ 999.99</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/2/GW/XP/BW/1974219/ladies-designer-kurti-500x500.jpeg"
+                            alt="">
+                        <h3>Cotton Kurti</h3>
+                        <p class="price">₹ 1499.99</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://www.suratifabric.com/blog/wp-content/uploads/2022/02/Cotton-Kurtis.jpg"
+                            alt="">
+                        <h3>Fancy Kurti</h3>
+                        <p class="price">₹ 850.00</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://www.suratifabric.com/blog/wp-content/uploads/2022/02/Chikan-Kurtis.jpg"
+                            alt="">
+                        <h3>Chikan Kurti</h3>
+                        <p class="price">₹ 999.00</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured-products">
+            <div class="container">
+                <h2>Latest Products</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://www.suratifabric.com/blog/wp-content/uploads/2022/02/Long-Sleeves-Kurtis-768x1133.jpg"
+                            alt="">
+                        <h3>Long sleeve Kurti</h3>
+                        <p class="price">₹ 999.99</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://www.suratifabric.com/blog/wp-content/uploads/2022/02/Digital-printed-kurtis.jpg"
+                            alt="">
+                        <h3>Digital Print Kurti</h3>
+                        <p class="price">₹ 1499.75</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+
+                        <img src="https://www.suratifabric.com/blog/wp-content/uploads/2022/02/Straight-Kurtis.jpg"
+                            alt="">
+                        <h3>Straight Kurti</h3>
+                        <p class="price">₹ 600.00</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+
+                        <img src="https://www.suratifabric.com/blog/wp-content/uploads/2022/02/Rayon-Kurtis-1.jpg"
+                            alt="">
+                        <h3>Rayon Kurti</h3>
+                        <p class="price">₹ 1129.99</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                </div>
+
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://www.suratifabric.com/blog/wp-content/uploads/2022/02/Indo-Western-Kurtis.jpg"
+                            alt="">
+                        <h3>Indo Western Kurti</h3>
+                        <p class="price">₹ 500.00</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://www.suratifabric.com/blog/wp-content/uploads/2022/02/Long-kurtis.jpg" alt="">
+                        <h3>Long Kurti</h3>
+                        <p class="price">₹ 2000.00</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://www.suratifabric.com/blog/wp-content/uploads/2022/02/Palazzo-Kurtis.jpg"
+                            alt="">
+                        <h3>Plazzo Kurti</h3>
+                        <p class="price">₹ 850.99</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://www.suratifabric.com/blog/wp-content/uploads/2022/02/Anarkali-kurtis.jpg"
+                            alt="Product 4">
+                        <h3>Anarkali Kurti</h3>
+                        <p class="price">₹ 1000.00</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured-products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="https://www.suratifabric.com/blog/wp-content/uploads/2022/02/Denim-kurtis.jpg" alt="">
+                        <h3>Demin Kurti</h3>
+                        <p class="price">₹ 700.00</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://www.suratifabric.com/blog/wp-content/uploads/2022/02/Branded-Kurtis.jpg"
+                            alt="">
+                        <h3>Branded Kurti</h3>
+                        <p class="price">₹ 1499.99</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+
+                        <img src="https://www.suratifabric.com/blog/wp-content/uploads/2022/02/Bandhani-kurtis.jpg"
+                            alt="">
+                        <h3>Bhandhani Kurti</h3>
+                        <p class="price">₹ 879.99</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                    <div class="product">
+
+                        <img src="https://www.suratifabric.com/blog/wp-content/uploads/2022/02/Silk-Kurtis.jpeg" alt="">
+                        <h3>Silk Kurti</h3>
+                        <p class="price">₹ 2500.00</p>
+                        <button class="btn btn-black">Add to Cart</button>
+                        <button class="btn">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+
+   
+</body>
+
+</html>
